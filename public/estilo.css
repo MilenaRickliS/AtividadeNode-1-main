@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* body */
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f2cbfc;
+    font-size: 15px;
+  }
+  
+  /* Titulo */
+  .Titulo {
+    background-color: #bb5be4;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Forms */
+  .forms {
+    background-color: #bb5be4;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .forms button, .forms select {
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  /* Produto */
+  .nomeproduto{
+    background-color: #bb5be4 ;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+    width: 400px;
+
+    }
+    .produto{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .conteudo{
+        text-transform: capitalize;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  
+  /* Add  */
+  .add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 18px;
+    background-color: #bb5be4;
+    border-radius: 30px;
+    padding: 60px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    color: #000;
+  }
+  
+  .add button, .add select {
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+  }
+  
+  .add select:hover {
+    background-color: #029b99;
+  }
+  
+  /* Bloco */
+  .bloco {
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Link */
+  .link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #bb5be4;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+  
+  .link:hover {
+    transform: scale(1.05);
+    background-color: #8029a5;
+  }
+  .addnovo{
+    background-color: #bb5be4;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    margin: 20px; 
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    .addnovo:hover{
+        background-color: #8029a5;
+    }
+    .voltar{
+        text-decoration: none;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .voltar:hover{
+        color: #8029a5;
+    }
+  
+  /* Categorias */
+  .eletronicos, .movel, .roupa, .eletrodomestico {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 50px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .eletronicos {
+    background-color: #cccccc;
+  }
+  
+  .movel {
+    background-color: #f67704;
+  }
+  
+  .roupa {
+    background-color: #029b99;
+  }
+  
+  .eletrodomestico {
+    background-color: #87555c;
+  }
+  
+
+  @media (max-width: 768px) {
+    .bloco {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bloco {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
