@@ -9,14 +9,15 @@
 <body class="corpoadd">
     <h1 class="Titulo">Adicionar Novo Produto</h1>
     <form class='add' action="/add" method="POST">
-        <label for="nome">Nome:</label>
+        <label for="nome">Nome</label>
         <input type="text" name="nome" id="nome" required>
 
         <br>
 
-        <label for="preco">Preço:</label>
+        <label for="preco">Preço</label>
         <input type="number" name="preco" id="preco" required>
 
+        <br>
         <!-- <label for="categoria">Categoria:</label>
         <input name="categoria" id="categoria" required> -->
 
@@ -30,11 +31,14 @@
 
         <br>
 
-        <button type="submit">Adicionar</button>
+        <button class="link" type="submit">Adicionar</button>
+        <br>
+        <br>
+        <a class='voltar'href="/">Voltar à página de produtos</a>
 
     </form>
 
-    <a class='voltar'href="/">Voltar à página de produtos</a>
+    
 
 </body>
 </html>
